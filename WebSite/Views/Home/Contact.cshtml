@@ -1,17 +1,55 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<form class="form-horizontal" method="post">
+    <fieldset>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+        <!-- Form Name -->
+        <legend>Contact Us</legend>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Name">Name</label>  
+            <div class="col-md-4">
+                <input id="Name" name="Name" type="text" placeholder="" class="form-control input-md" required="">
+    
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="txtEmail">Email</label>  
+            <div class="col-md-4">
+                <input id="Email" name="Email" type="text" placeholder="" class="form-control input-md" required="">
+    
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Website">Website</label>  
+            <div class="col-md-4">
+                <input id="Website" name="Website" type="text" placeholder="" class="form-control input-md" required="">
+              
+            </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Comment">Comment</label>
+            <div class="col-md-4">                     
+                <textarea class="form-control" id="Comment" name="Comment"></textarea>
+            </div>
+        </div>
+        
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="btnSubmit"></label>
+            <div class="col-md-8">
+                <button id="btnSubmit" name="btnSubmit" class="btn btn-success">Submit</button>
+                <button id="btnCancel" name="btnCancel" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
