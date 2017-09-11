@@ -48,6 +48,10 @@
             <div class="col-md-8">
                 <button id="btnSubmit" name="btnSubmit" class="btn btn-success">Submit</button>
                 <button id="btnCancel" name="btnCancel" class="btn btn-danger">Cancel</button>
+                @if (ViewBag.MailSent != null && ViewBag.MailSent)
+                {
+                    <script>alert("Mail Sent!");</script>
+                }
             </div>
         </div>
 

@@ -29,7 +29,16 @@ namespace WebSite.Controllers
         [HttpPost]
         public ActionResult Contact(Contact contact)
         {
+            if (SendMail(contact))
+            {
+                @ViewBag.MailSent = true;
+            }
             return View();
+        }
+
+        private bool SendMail(Contact contact)
+        {
+            return true;
         }
     }
 }
